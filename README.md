@@ -23,3 +23,11 @@ Finally, docker copies everything in src/ inside this repository to the /var/www
 - `git clone` this repository.
 - `sudo docker build -t hello-bari .`
 - `sudo docker run -p 80:80 hello-bari`
+
+# Let's talk about some projects with me
+Just Contact Me At :
+- Email : barihade@gmail.com
+- twitter : [@barihade](https://twitter.com/barihade)
+
+# License
+[MIT](https://opensource.org/licenses/MIT) Copyright (c) 2019 - forever Bari Hade V. W.
