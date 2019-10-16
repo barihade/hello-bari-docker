@@ -1,0 +1,25 @@
+# Hello Bari Docker
+This is simple Hello World PHP Application deployed using Docker
+
+# How To Make It
+1. First of all you'll need to install Docker if you haven't done that already. You can learn to install Docker at [Docker Official Documentation](https://docs.docker.com/install/).
+2. Next, you need to build Docker image using Dockerfile. The Dockerfile contain information about parent image, project path inside the image, and exposed port. After creating Dockerfile inside the project directory, execute it using command : `sudo docker build -t hello-bari .`
+1. After that, you can run the container created using image "hello-bari" using command : `sudo docker run -p 80:80 hello-bari`
+2. Or, you can create the container first using command : `sudo docker container create --name app-hello -p 80:80 hello-bari`. Then, you can run it using command : `sudo docker container start app-hello`
+
+# How It Works
+Docker builds an image containing the application in src/ and all of its dependencies by using the Dockerfile contained in this repository.
+
+The Dockerfile tells docker to use the [Official PHP Docker image](https://hub.docker.com/_/php) as the parent image.
+
+The PHP image then uses the [Official Debian Jessie Docker image](https://hub.docker.com/_/debian) as its parent image.
+
+At this point, an image has been built which contains Apache, PHP and all of the OS dependencies and libraries required to serve a webpage written in PHP.
+
+Finally, docker copies everything in src/ inside this repository to the /var/www/html folder inside the image. This is the Apache web root directory.
+
+# Setup
+- Ensure you have Docker installed.
+- `git clone` this repository.
+- `sudo docker build -t hello-bari .`
+- `sudo docker run -p 80:80 hello-bari`
