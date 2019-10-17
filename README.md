@@ -30,4 +30,4 @@ Just Contact Me At :
 - twitter : [@barihade](https://twitter.com/barihade)
 
 # License
-[MIT](https://opensource.org/licenses/MIT) Copyright (c) 2019 - forever Bari Hade V. W.
+This repository is under [MIT](https://opensource.org/licenses/MIT) license.
