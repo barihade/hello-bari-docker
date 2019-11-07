@@ -1,5 +1,5 @@
 # Hello Bari Docker
-This is simple Hello World PHP Application deployed using Docker
+This is simple Hello World PHP Application deployed using Docker.
 
 # How To Make It
 1. First of all you'll need to install Docker if you haven't done that already. You can learn to install Docker at [Docker Official Documentation](https://docs.docker.com/install/).
