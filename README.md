@@ -3,9 +3,9 @@ This is simple Hello World PHP Application deployed using Docker.
 
 # How To Make It
 1. First of all you'll need to install Docker if you haven't done that already. You can learn to install Docker at [Docker Official Documentation](https://docs.docker.com/install/).
-2. Next, you need to build Docker image using Dockerfile. The Dockerfile contain information about parent image, project path inside the image, and exposed port. After creating Dockerfile inside the project directory, execute it using command : `sudo docker build -t hello-bari .`
-3. After that, you can run the container created using image "hello-bari" using command : `sudo docker run -p 5000:80 hello-bari`
-4. Or, you can create the container first using command : `sudo docker container create --name app-hello -p 5000:80 hello-bari`. Then, you can run it using command : `sudo docker container start app-hello`
+2. Next, you need to build Docker image using Dockerfile. The Dockerfile contain information about parent image, project path inside the image, and exposed port. After creating Dockerfile inside the project directory, execute it using command : `docker build -t hello-bari .`
+3. After that, you can run the container created using image "hello-bari" using command : `docker run -p 5000:80 hello-bari`
+4. Or, you can create the container first using command : `docker container create --name app-hello -p 5000:80 hello-bari`. Then, you can run it using command : `docker container start app-hello`
 5. You can access it, with typing `localhost:5000` on browser address bar.
 
 # How It Works
@@ -22,8 +22,8 @@ Finally, docker copies everything in src/ inside this repository to the /var/www
 # Setup
 - Ensure you have Docker installed.
 - `git clone` this repository.
-- `sudo docker build -t hello-bari .`
-- `sudo docker run -p 5000:80 hello-bari`
+- `docker build -t hello-bari .`
+- `docker run -p 5000:80 hello-bari`
 
 # Let's talk about some projects with me
 Just Contact Me At :
